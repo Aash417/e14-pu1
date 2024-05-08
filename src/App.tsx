@@ -78,9 +78,10 @@ function App() {
 
 				<div className='flex gap-10'>
 					<div className='flex flex-col max-w-2xl gap-6'>
-						<div className='flex gap-5 bg-zinc-50'>
+						<div className='flex gap-5 pb-5 bg-zinc-50'>
 							<code className=''>{sub}</code>
 							<Button
+								className='px-4 py-2 font-bold transition-colors duration-200 rounded hover:bg-blue-100 focus:outline-none focus:shadow-outline active:bg-gray-300 active:text-gray-900'
 								variant='outline'
 								onClick={async () => {
 									await navigator.clipboard.writeText(sub);
@@ -93,6 +94,7 @@ function App() {
 						<div className='flex gap-5 bg-zinc-50'>
 							<code className=''>{con}</code>
 							<Button
+								className='px-4 py-2 font-bold transition-colors duration-200 rounded hover:bg-blue-100 focus:outline-none focus:shadow-outline active:bg-gray-300 active:text-gray-900'
 								variant='outline'
 								onClick={async () => {
 									await navigator.clipboard.writeText(con);
